@@ -58,7 +58,7 @@ ROOT_URLCONF = 'djangoreact.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'main-ui/build', ]  # noqa
+        'DIRS': [BASE_DIR / 'mainapp-ui/build', ]  # noqa
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -119,7 +119,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = (
-    (BASE_DIR / 'main-ui/build/static'),
+    (BASE_DIR / 'mainapp-ui/build/static'),
 )
 
 # Default primary key field type
